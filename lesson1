@@ -189,6 +189,7 @@
             promiseArr.push(fetch(url + i).then(response => response.json()));
         }
         Promise.all(promiseArr).then(r => console.log(r));
+        
     </script>
 </head>
 <body>
