@@ -12,11 +12,6 @@ class Menu extends React.Component {
         return <div className={"container"}>
             <nav className={"blog-nab"}>
                 {items}
-                {/*<a className="blog-nav-item active" href="#">Home</a>*/}
-                {/*<a className="blog-nav-item" href="#">New features</a>*/}
-                {/*<a className="blog-nav-item" href="#">Press</a>*/}
-                {/*<a className="blog-nav-item" href="#">New hires</a>*/}
-                {/*<a className="blog-nav-item" href="#">About</a>*/}
             </nav>
         </div>;
     }

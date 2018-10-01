@@ -22,7 +22,7 @@ PostHolder.defaultProps = {
 
 // Проверка типов
 PostHolder.propTypes = {
-    items: PropTypes.array.isRequired
+    posts: PropTypes.array.isRequired
 };
 
 export default PostHolder;

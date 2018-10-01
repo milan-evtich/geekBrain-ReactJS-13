@@ -8,8 +8,7 @@ class MenuTop extends React.Component {
             {href: "/new-features", title: "New features"},
             {href: "/press", title: "Press"},
             {href: "/new-hires", title: "New hires"},
-            {href: "/anout-us", title: "About"},
-            {href: "/login", title: "Login"}
+            {href: "/anout-us", title: "About"}
         ];
         return <div className={"blog-masthead"}>
             <Menu menuTitle={"Top Menu"} items={menuItems} />

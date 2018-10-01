@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "./Header";
 import PostHolder from "./PostHolder";
-import BlogPost from "./BlogPost";
+import SideBar from "./SideBar";
 
 class MainSpace extends React.Component {
     render() {
@@ -36,17 +36,39 @@ class MainSpace extends React.Component {
                     "Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue."
             }
         ];
+        const modules = [
+            {
+                title: "About",
+                inset: "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.",
+                links: []
+            },
+            {
+                title: "Archives",
+                inset: null,
+                links: [{title: "March 2014", href: "#"}, {title: "February 2014", href: "#"}, {
+                    title: "January 2014",
+                    href: "#"
+                }, {title: "December 2013", href: "#"}, {title: "November 2013", href: "#"}, {
+                    title: "October 2013",
+                    href: "#"
+                }, {title: "September 2013", href: "#"}, {title: "August 2013", href: "#"}, {
+                    title: "July 2013",
+                    href: "#"
+                }, {title: "June 2013", href: "#"}, {title: "May 2013", href: "#"}, {title: "April 2013", href: "#"}]
+            },
+            {
+                title: "Elsewhere",
+                inset: null,
+                links: [{title: "GitHub", href: "#"}, {title: "Twitter", href: "#"}, {title: "Facebook", href: "#"}]
+            }
+        ];
 
         return <div className={"container"}>
             <Header title={"The Bootstrap Blog"}> The official example template of creating a blog with
                 Bootstrap.</Header>
             <div className={"row"}>
                 <PostHolder posts={blogPosts}/>
-
-                <div className={"col-sm-3 col-sm-offset-1 blog-sidebar"}>
-
-                </div>
-
+                <SideBar modules={modules}/>
             </div>
         </div>;
     }
