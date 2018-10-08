@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './app/styles/main.css';
 import Layout from "./app/layouts/Layout";
 import MainPage from "./app/pages/Main";
 import CommentsPage from "./app/pages/Comments";
